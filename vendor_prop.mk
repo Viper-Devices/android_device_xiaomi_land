@@ -100,7 +100,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196610 \
     ro.qualcomm.cabl=0 \
     ro.vendor.display.cabl=2 \
-    ro.sf.lcd_density=280 \
+    ro.sf.lcd_density=320 \
     persist.debug.wfd.enable=1 \
     persist.hwc.enable_vds=1
 
@@ -116,10 +116,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.fm.transmitter=false
     
-# FRP
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.frp.pst=/dev/block/bootdevice/by-name/config
-
 # GPS
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.gps.qc_nlp_in_use=1 \
@@ -137,7 +133,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.vidc.disable.split.mode=1 \
     vendor.vidc.enc.disable.pq=true \
     vendor.video.disable.ubwc=1 \
-    media.settings.xml=/vendor/etc/media_profiles_vendor.xml
+    media.settings.xml=/vendor/etc/media_profiles_V1_0.xml
 
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -214,3 +210,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Wifi
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0
+
+# Deepsleep
+PRODUCT_PROPERTY_OVERRIDES += \
+    pm.sleep_mode=1
+
+# Extended Filesystem Support
+TARGET_EXFAT_DRIVER := sdfat

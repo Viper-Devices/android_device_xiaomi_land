@@ -19,7 +19,8 @@ $(call inherit-product, vendor/xiaomi/land/land-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
+    $(LOCAL_PATH)/overlay \
+    $(LOCAL_PATH)/overlay-lineage
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1280
@@ -388,6 +389,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     textclassifier.bundle1
 
+# ThermalController app
+PRODUCT_PACKAGES += \
+    ThermalController
+
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-impl \
@@ -458,6 +463,14 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/hostapd.accept:system/etc/hostapd/hostapd.accept \
     $(DEVICE_PATH)/configs/hostapd.deny:system/etc/hostapd/hostapd.deny
     
+# Device-specific settings
+PRODUCT_PACKAGES += \
+    XiaomiParts
+
+# Camera app
+PRODUCT_PACKAGES += \
+     MGC
+
 # WiFi Display
 PRODUCT_PACKAGES += \
     libaacwrapper \

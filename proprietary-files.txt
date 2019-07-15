@@ -1,7 +1,7 @@
 # Audio dirac - from stock - V10.2.2.0.MALMIXM
-lib/soundfx/libdirac.so
-lib/libDiracAPI_SHARED.so
 vendor/etc/diracmobile.config
+vendor/lib/soundfx/libdirac.so
+vendor/lib/libDiracAPI_SHARED.so
 vendor/lib/libhwdaphal.so
 vendor/lib64/libhwdaphal.so
 

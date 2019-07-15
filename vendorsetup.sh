@@ -1,2 +1,2 @@
-add_lunch_combo aosp_land-user
-add_lunch_combo aosp_land-userdebug
+add_lunch_combo viper_land-userdebug
+add_lunch_combo viper_land-eng
